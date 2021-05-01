@@ -23,11 +23,7 @@
                     {% if not user.active %}
                       disabled
                       {% else %}
-                        {% if app.user is same as(user) %}
-                          You cannot perform an action on yourself
-                          {% else %}
-                            <a href="{{ path('disable_user', {'user': user.id}) }}" class="btn btn-danger">Disable</a>
-                        {% endif %}
+                      <a href="{{ path('disable_user', {'user': user.id}) }}" class="btn btn-danger">Disable</a>
                     {% endif %}
                   </td>
                 </tr>

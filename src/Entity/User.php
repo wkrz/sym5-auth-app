@@ -7,8 +7,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class User
- *
+ * @ORM\Entity()
  * @ORM\Table(name="`user`")
  */
 class User implements UserInterface
